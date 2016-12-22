@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+            var websocket = new WebSocket("ws://localhost:8080/WebSocketRoom/chatroomServerEndpoint");
+            websocket.onmessage = function processMessage(){
+                var jsonData = Json.parse(message.data);
+                if(jsonData.message != null) messagesTextArea.value += jsonData.message + "\n";
+            };
+            function sendMessage() {
+                websocket.send(messageText.value);
+                messageText.value = "";
+            };
+            </script>
+    </head>
+    <body>
+        <textarea id="messageTextArea" readonly="readonly" rows="10" cols="45"></textarea><br/>
+        <input type="text" id="messageText" size="50" /><input type="button" value="Send" onclick="sendMessage();" />
+    </body>
+</html>
