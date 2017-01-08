@@ -1,68 +1,206 @@
 <div class="container">
-
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css" alt="nothing to see here">
     <div class="row">
 
         <div class="col-lg-12">
-            <h1 class="page-header">About
+            <h1 class="page-header">About Me 
                 <small>Everything you need to know</small>
             </h1>
-            <ol class="breadcrumb">
-                <li><a href="../index.html">Home</a>
-                </li>
-                <li class="active">About</li>
-            </ol>
         </div>
 
+        <div class="w3-row">
+            <a href="javascript:void(0)" onclick="openCity(event, 'London');">
+                <div id="show" class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">About</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openCity(event, 'Paris');">
+                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Skills</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openCity(event, 'Tokyo');">
+                <div class="w3-third tablink w3-bottombar w3-hover-light-grey w3-padding">Clients</div>
+            </a>
+        </div>
+
+        <div id="London" class="w3-container city" style="display:none">
+            <p>Hello</p>
+
+            <div class="row">
+                <br>
+                <br>
+                <div class="col-md-6">
+                    <img class="img-responsive" src="img/IMG_0027.JPG" alt=""/>
+                </div>
+                <div class="col-md-6">
+                    <h2>Meet your Devil Dog</h2>
+
+                    <p>
+                        My name is Joshua. I am a developer that specializes in Web Development.
+                        This page that you see now was built using HTML, CSS, and Angular JavaScript. 
+                        I began my journey in the IT field in 2012 after serving 6 years in the United States Marine Corps. 
+                        After my Honorable discharge from duty I studied Computer Information Technology at 
+                        Southeast Community College in Network Administration landing my first contract gig in 2013 for Modis.
+                    </p>
+                    <p>
+                        After a couple of months of living a life of Moss & Roy from the popular BBC sitcom, "The IT Crowd" (we all know what I'm T                alking about, "Hello IT? Have you tried turning it off and on again???") I began to realize that I was pondering if this was the only 
+
+                    </p>
+                    <p>Development isn't only what I do. It's my passion. </p>
+                    <p>.</p>
+
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+        </div>
     </div>
 
-    <div class="row">
+    <div id="Paris" class="w3-container city" style="display:none">
+        <p>Test</p>
 
-        <div class="col-md-6">
-            <img class="img-responsive" src="">
+        <h1 class="page-header">Languages <small>technology I use everyday</small></h1>
+
+        <p>
+            Some
+        </p>
+
+
+        <div class="skillbar clearfix " data-percent="95%">
+            <div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+            <div class="skillbar-bar" style="background: #e67e22;"></div>
+            <div class="skill-bar-percent">95%</div>
+        </div> <!-- End Skill Bar -->
+
+        <div class="skillbar clearfix " data-percent="80%">
+            <div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+            <div class="skillbar-bar" style="background: #3498db;"></div>
+            <div class="skill-bar-percent">80%</div>
+        </div> <!-- End Skill Bar -->
+
+        <div class="skillbar clearfix " data-percent="78%">
+            <div class="skillbar-title" style="background: #ffd500;"><span>JavaScript</span></div>
+            <div class="skillbar-bar" style="background: #ffd500;"></div>
+            <div class="skill-bar-percent">78%</div>
+        </div> 
+        
+         <div class="skillbar clearfix " data-percent="70%">
+            <div class="skillbar-title" style="background: #124e8c;"><span>BootStrap</span></div>
+            <div class="skillbar-bar" style="background: #4288d0;"></div>
+            <div class="skill-bar-percent">70%</div>
         </div>
-        <div class="col-md-6">
-            <h2>Meet your Devil Dog</h2>
 
-            <p>My name is Joshua. I am a developer that specializes in Web Development. I didn't alwas</p>
-            <p>Development isn't only what I do. It's my passion. </p>
-            <p>.</p>
-        </div>
+        <div class="skillbar clearfix " data-percent="40%">
+            <div class="skillbar-title" style="background: #3e4e5c;"><span>jQuery</span></div>
+            <div class="skillbar-bar" style="background: #3e4e5c;"></div>
+            <div class="skill-bar-percent">40%</div>
+        </div> <!-- End Skill Bar -->
 
+        <div class="skillbar clearfix " data-percent="75%">
+            <div class="skillbar-title" style="background: #ef2929;"><span>AngularJS</span></div>
+            <div class="skillbar-bar" style="background: #ef2929;"></div>
+            <div class="skill-bar-percent">75%</div>
+        </div> <!-- End Skill Bar -->
+
+        <div class="skillbar clearfix " data-percent="61%">
+            <div class="skillbar-title" style="background: #27ae60;"><span>Java</span></div>
+            <div class="skillbar-bar" style="background: #2ecc71;"></div>
+            <div class="skill-bar-percent">61%</div>
+        </div> <!-- End Skill Bar -->
+
+        <div class="skillbar clearfix " data-percent="23%">
+            <div class="skillbar-title" style="background: #4f3992;"><span>MySQL</span></div>
+            <div class="skillbar-bar" style="background: #4f3992;"></div>
+            <div class="skill-bar-percent">23%</div>
+        </div> 
+
+        <div class="skillbar clearfix " data-percent="14%">
+            <div class="skillbar-title" style="background: #00ff04;"><span>Photoshop</span></div>
+            <div class="skillbar-bar" style="background: #00ff04;"></div>
+            <div class="skill-bar-percent">14%</div>
+        </div> 
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
-    <!-- Our Customers -->
+    <div id="Tokyo" class="w3-container city" style="display:none">
+        <p>123</p>
+        <div class="row">
 
-    <div class="row">
+            <div class="col-lg-12">
+                <h2 class="page-header">Our Customers</h2>
+            </div>
 
-        <div class="col-lg-12">
-            <h2 class="page-header">Our Customers</h2>
-        </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+            </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-        </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+            </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-        </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+            </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-        </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+            </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-        </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+            </div>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-        </div>
+            <div class="col-md-2 col-sm-4 col-xs-6">
+                <img class="img-responsive img-customer" src="http://placehold.it/500x300">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
 
-        <div class="col-md-2 col-sm-4 col-xs-6">
-            <img class="img-responsive img-customer" src="http://placehold.it/500x300">
-        </div>
 
+        </div> 
     </div>
+</div>
+
+<script>
+    function openCity(evt, cityName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("city");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" w3-border-red", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-border-red";
+    }
+</script>
+
+<!--
+<script>
+    $("document").ready(function (){
+        $("show").onload.tab('show');
+    });
+    
+</script> -->
+
+<script src="js/extras.js" />
 
 </div>
-<!-- /.container -->
+
